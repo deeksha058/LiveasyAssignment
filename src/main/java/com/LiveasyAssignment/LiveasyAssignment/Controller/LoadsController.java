@@ -7,14 +7,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
 @RestController
 public class LoadsController {
+
     @Autowired
     private LoadsService loadsService;
+
 
     @PostMapping("/load")
     public ResponseEntity<String>  saveLoadsData(@RequestBody Loads loads){
